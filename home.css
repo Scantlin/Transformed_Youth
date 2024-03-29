@@ -263,13 +263,22 @@ margin-left: 20px;
 border-radius: 20px;
 }
 .credits {
-margin-top: 5380px;
-margin-left: 22%;
-position: absolute;
-text-align: center;
-color: white;
-font-family: 'Trebuchet MS'
+    margin-top: 5380px;
+    margin-left: 0%;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-family: 'Trebuchet MS';
+    font-size:25px ;
 }
+
+.developer-image {
+    width: 150px; /* Adjust the width of the developer images */
+    height: 150px; /* Adjust the height of the developer images */
+    margin: 10px; /* Add some margin around each developer image */
+    border-radius: 75%; /* Make the developer images circular */
+}
+
 .How-are-you{
 top: 750px;
 left: 440px;
@@ -340,4 +349,5 @@ text-overflow: ellipsis; /* Add ellipsis for overflow text */
 .intro{
 font-size: 25px;
 text-align: center;
+font-family: 'Trebuchet MS'
 }
