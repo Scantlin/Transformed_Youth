@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformed Youth</title>
+    <link rel="icon" href='TRANSFORMED.png' type="image/png">
+    <style>
+        ::-webkit-scrollbar {
+            width: 12px; /* Width of the scrollbar */
+        }
+        ::-webkit-scrollbar-track {
+            background: #222424;}
+            ::-webkit-scrollbar-thumb {
+            background: #92e93c; /* Color of the scrollbar handle */
+            border-radius: 6px; /* Rounded corners */
+        }::-webkit-scrollbar-thumb:hover {
+            background: #5a991b; /* Darker color when hovered */
+        }
+body{
+    margin: 0;
+    background-image: url(finalbg.png);
+    background-size: cover;
+    width: 820px;
+    height: 5800px;
+    overflow-y: visible;
+}
+/* Add this to your CSS */
+.fade-in {
+    opacity: 0; /* Start with 0 opacity */
+    transition: opacity 0.5s ease-in; /* Add transition effect */
+}
+
+.fade-in.active {
+    opacity: 1; /* Change opacity to 1 when active */
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: -480px;
+    float: right;
+}
+nav li {
+    margin-right: 35px;
+    margin-top: 45px;
+    transition: all 0.1s ease-in;
+}
+nav a {
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    color: #66d810;
+    display: inline;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.icon {
+    max-width: 100%;
+    height: 175px;
+    margin-left: 60px;
+    margin-top: -20px;
+    float: left;
+}
+.divfloat {
+    float: left;
+    margin-top: 60px;
+    margin-left: 70px;
+}
+.background-image {
+    background-image: url(finalbg.png);
+    position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+.head1 {
+    font-family: 'Trebuchet MS';
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+.page1 {
+    font-size: 20px;
+    font-family: 'Courier New';
+    font-weight: lighter;
+    color: white;
+    letter-spacing: -1px;
+}
+nav {
+    position: relative;
+    z-index: 999; /* Ensure the navigation bar is on top */
+}
+nav a:hover {
+    border-bottom: 2px solid greenyellow;
+}
+nav li:hover {
+    transform: scale(1.1);
+}
+.learn1{
+    cursor:default;
+    position: absolute;
+    color: white;
+    top: -100px;
+    left: 590px;
+    border: 5px groove #66d810;
+    border-radius: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Trebuchet MS'
+}
+
+.Gi{
+    color: white;
+    left: 15px;
+    top: 3100px;
+    position: absolute;
+    font-family: 'Trebuchet MS';
+    cursor: default;
+    font-size: 25px;
+    text-align: center;
+}
+.gallery {
+    position: absolute;
+    color: white;
+    left: 590px;
+    top: 3000px;
+    border: 5px groove #66d810;
+    border-radius: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Trebuchet MS';
+    cursor: default;
+    z-index: 1; /* Ensure the gallery doesn't overlap the navigation */
+}
+
+.images {
+    position: absolute;
+    overflow: hidden;
+    margin-top: 3250px;
+}
+.img1 {
+    max-width: 100%;
+    max-height: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.img2 {
+    max-width: 100%;
+    max-height: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.img3 {
+    max-width: 100%;
+    max-height: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.img4 {
+    max-width: 100%;
+    max-height: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.img5 {
+    max-width: 100%;
+    max-height: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.img6 {
+    max-width: 100%;
+    max-height: 100%;
+    height: 340px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.img7 {
+    max-width: 100%;
+    max-height: 100%;
+    height: 340px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.img8 {
+    max-width: 100%;
+    max-height: 100%;
+    height: 257px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.img9 {
+    max-width: 100%;
+    max-height: 100%;
+    height: 257px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.img10 {
+    max-width: 100%;
+    max-height: 100%;
+    height: 260px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.img11 {
+    max-width: 100%;
+    max-height: 100%;
+    height: 257px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.img12 {
+    max-width: 100%;
+    max-height: 100%;
+    height: 260px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.img13 {
+    max-width: 100%;
+    max-height: 100%;
+    height: 260px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.img14 {
+    max-width: 100%;
+    max-height: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.img15 {
+    max-width: 100%;
+    max-height: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.credits {
+    margin-top: 5380px;
+    margin-left: 0%;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-family: 'Trebuchet MS';
+    font-size: 25px;
+}
+
+.developer-image {
+    width: 150px; /* Adjust the width of the developer images */
+    height: 150px; /* Adjust the height of the developer images */
+    margin: 10px; /* Add some margin around each developer image */
+    border-radius: 75%; /* Make the developer images circular */
+}
+.How-are-you{
+    top: 800px;
+    left: 540px;
+    width: 250px;
+        height: 100px;
+        background-color: #5a991b;
+        border: 2px solid #333;
+        text-align: center;
+        line-height: 25px;
+        cursor: pointer;
+        position: absolute;
+        justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    border-radius: 25px;
+}
+.How-are-you:hover{
+    background-color: #ccc; /* Change color on hover for visual feedback */
+}
+.learn {
+    position: absolute;
+    color: white;
+    top: 1300px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Add margin between rows */
+}
+
+.box {
+    border-radius: 90px;
+    width: 500px; /* Set fixed width */
+    height: 500px; /* Set fixed height */
+    overflow: auto; /* Allow overflow */
+    background-color: #222424;
+    border: 3px solid #5a991b;
+    box-shadow: #5a991b;
+    color: white;
+    margin: 80px 85px; /* Adjust margin between boxes */
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 25px;
+    font-family: 'Trebuchet MS';
+    font-size: 23px;
+}
+.box:hover{
+    background-color: #5a991b; /* Change color on hover for visual feedback */
+}
+.box p {
+    overflow: hidden; /* Hide overflow content */
+    white-space: pre-wrap; /* Prevent text from wrapping */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    padding:25px
+}
+.intro{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+}
+    </style>
+    <script>
+        window.onload = function() {
+    document.body.classList.add('active');
+};
+var textOptions4 = [
+        "How are you?",
+        "Have you ever asked yourself how you really are?",
+        "Has there ever been a time in your life when you couldn't even answer this question?",
+    ];
+    var currentIndex4 = 0;
+
+    function How() {
+        var textElement4 = document.getElementById('How');
+        currentIndex4 = (currentIndex4 + 1) % textOptions4.length;
+        textElement4.innerText = textOptions4[currentIndex4];
+    }
+function stopScroll(event) {
+        event.preventDefault();
+    }
+
+        var textOptions = [
+        "Maybe the majority of us don't know why we are here on Earth or maybe just a small percentage do. Ever wonder why you are here in this world? Living without knowing your purpose is difficult. I will thus tell you that you are blessed to be alive and well today, but I will also tell you that you it's disheartening that you don't know who your Creator is. We live for the Lord, which is a reality that not everyone can embrace. Since He is the source of all of us, He also deserves our lives. We might not realize as young people that our purpose in life is to exalt the Lord. Why not? Because humans are fundamentally prideful and selfcentered.",
+        "God is God and He works all things, including your life, according to his purposes. Nothing occurs unless it is directed by God. You might be thinking, God has a purpose for my life. I had no idea. What is it? That's a very good question. And the good news is that you don't have to overthink everything or attempt to figure it all out on your own; God will reveal His plan for your life as you seek Him. Live your life with faith and confidence in Him, and He will lead you through every step of the way.",
+        "Psalm 57:2 says, “I cry out to God Most High, to God who fulfills his purpose for me.", "Knowing this is essential to realizing God's plan for your life. God will accomplish all of His plans for you; He has counted your days. However, our choices and actions also really matter. Although it is difficult to comprehend, we must be aware of this reality. So, we encourage you to attend our breakout sessions if you're still curious about your life's purpose.", "KNOW YOUR PURPOSE"
+    ]
+    var currentIndex = 3;
+
+    function toggleText() {
+        var textElement = document.getElementById('text');
+        currentIndex = (currentIndex + 1) % textOptions.length;
+        textElement.innerText = textOptions[currentIndex];
+    } 
+    var textOptions1 = [
+        "Individual identity discovery is a journey that stimulates the curiosity of our culture. You can find personality tests, dream analyses, and even Buzzfeed quizzes everywhere you look. It seems like everyone is searching for something to tell them who they are, where they belong and how they relate to the world.",
+        "Where do you find your identity?","While our culture pushes you to look within yourself for your identity, your natural propensity is to look for it outside of yourself.",
+        "One of the first places you might be tempted to examine is your career. Spending time and focus on your profession can make you feel like it is a defining feature of who you are. After all, a profession you are passionate about will certainly consume the majority of your time and attention. ", "Jobs and occupations are intimately connected to other areas where you can look for your identity, such as financial success and status. But it does not end there. We also question about our relationship statuses, attractiveness, grades, and reputation to get a sense of identity. Any or all of these may seem like solid foundations, yet none of them are permanent. Any of these may change without notice. If you rely on your identity upon achievement, fame, power, physical appearance, and other factors, you are setting yourself up for disapointment.", "In Romans 8:18 Paul says, “For I consider that the sufferings of this present time are not worth comparing with the glory that is going to be revealed to us.",
+        "KNOW YOUR IDENTITY", "Understanding your identity in God begins with knowing who He is, what He says about Himself, and what He says about you. Let us not seek our identity in this world because all we see is simply fleeting. So, if you want to find out what your identity is, join our breakout sessions"
+    ]
+    var currentIndex1 = 7;
+
+    function toggleText1() {
+        var textElement1 = document.getElementById('text1');
+        currentIndex1 = (currentIndex1 + 1) % textOptions1.length;
+        textElement1.innerText = textOptions1[currentIndex1];
+    }
+    var textOptions2 = [
+        "Every hour of every day, we make decisions and establish priorities. We all make decisions depending on what is most essential at any given time. When something, or anything, is a priority, it takes precedence over other things.  In other words, the priority comes first.",
+        "If we are sincerely committed to seeking God's kingdom and His righteousness, we will not have the time or desire to worry about what to eat, drink, or wear. We will be spending our time trusting Him fully rather than doubting and worrying. God must come first.",
+        "When it comes to important decisions, whose will usually takes priority in our lives? Is it our self-will or is it the will of God? Yes, we really struggle to do the will of the Lord because we don't want to. But since the Lord is in charge of everything, there are still things in this life that can be followed. Now, who should come first in our priorities?",
+        "It is clearly stated in the book of Matthew 6:33, “But seek first the kingdom of God and His righteousness and all these things will be added to you.",
+        "Put God first, before anything else.", "KNOW YOUR PRIORITIES"
+    ]
+    var currentIndex2 = 5;
+    function toggleText2() {
+        var textElement2 = document.getElementById('text2');
+        currentIndex2 = (currentIndex2 + 1) % textOptions2.length;
+        textElement2.innerText = textOptions2[currentIndex2]
+    }
+    var textOptions3 = [
+        "If you have ever struggled with self doubt or self esteem issues, I want you to take a moment, pause and be still before God. Ask him to reveal to you how he saves you. You are more than enough and you are equipped to walk worthy of all that God is calling you to do.",
+        "Our worth is in Christ and not in this world.", "We are His masterpiece. So let us not seek our value in this world, for it is found only in Christ. Let us ignore what the world tells us, as well as our own hearts, because heart is deceitful. We have value in God's eyes, which is why he made a way for us to get a second chance to be saved, even if we did not deserve to be loved.",
+        "So don't say no one loves us because He first loved us. Therefore, we can say that “I know I am loved by the King” because that is the truth. He loved us despite of our impurities, so that our response is to live for Him and live like Christ.",
+        "The word “WORTH” is granted by Jesus at the moment of salvation. When he came down in this world to take up His cross because He chose to love us even if we are His enemy. And that is the beauty of grace that gave value in our lives.",
+        "This verse maybe sounds familiar to you but we can find our worth through this verse. John 3:16 says, “For God so loved the world that He gave His only Son that whoever believes in Him should not perish but have an everlasting life.", "KNOW YOUR WORTH"
+    ]
+    var currentIndex3 = 5;
+    function toggletext3(){
+        var textElement3 = document.getElementById('text3');
+        currentIndex3 = (currentIndex3 + 1) % textOptions3.length;
+        textElement3.innerText = textOptions3[currentIndex3]
+    }
+     </script>           
+</head>
+<body class="fade-in">
+    <nav>
+        <img src="TRANSFORMED.png" alt="Transformed Youth Logo" class="icon">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#learn">Learn</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+    </nav>
+
+    <div class="divfloat" id="home">
+        <h1 class="head1">Transformed Youth</h1>
+        <p1 class="page1">Welcome to Transformed Youth, a non-profit organization<br>whose goal is to help and inspire
+            young people to<br>overcome obstacles in life. We are committed to lifting<br>young people's spirits and guiding
+            them towards a<br>brighter tomorrow.</p1>
+    </div>
+    <div class="How-are-you" onclick="How();">
+        <p id="How">How are you?</p>
+    </div>
+
+    <div class="learn">
+        <h1 class="learn1" id="learn">Learn</h1><p class="intro">The world faces many challenges in this life, and it appears that many people are unsure of what is morally correct and the reasons behind the events that occur in our lives. Regardless of difficulties in life,there is one truth that assures us that God has a plan for everything that happens to us.
+<br>Now the question is: is there any hope?<br>
+Let us seek answers to the questions that cannot be answered in our minds.
+</p>
+        <div class="box-container">
+            <div class="box" onclick="toggleText(); stopScroll(event)"><p id="text">KNOW YOUR PURPOSE</p></div>
+            <div class="box" onclick="toggleText1(); stopScroll(event)"><p id="text1">KNOW YOUR IDENTITY</p></div>
+        </div>
+        <div class="box-container">
+            <div class="box" onclick="toggleText2(); stopScroll(event)"><p id="text2">KNOW YOUR PRIORITIES</p></div>
+            <div class="box" onclick="toggletext3(); stopScroll(event)"><p id="text3">KNOW YOUR WORTH</div>
+        </div>
+        <div id="messageDisplay"></div>
+    </div>
+    
+    
+    <div><h1 class="gallery" id="gallery">Gallery</h1><p class="Gi">These images depict various youth events, aiming to inspire you to seek positive change and spiritual growth with God.</p></div>
+
+    <div class="images">
+        <img src="FB_IMG_1711580231640.jpg" alt="pic" class="img1">
+        <img src="FB_IMG_1711580245167.jpg" alt="pic" class="img2">
+        <img src="FB_IMG_1711580314303.jpg" alt="pic" class="img3">
+        <img src="FB_IMG_1711580386558.jpg" alt="pic" class="img4">
+        <img src="FB_IMG_1711580401492.jpg" alt="pic" class="img5">
+        <img src="FB_IMG_1711580431425.jpg" alt="pic" class="img7">
+        <img src="FB_IMG_1711580418878.jpg" alt="pic" class="img6">
+        <img src="FB_IMG_1711580468135.jpg" alt="pic" class="img8">
+        <img src="FB_IMG_1711580636802.jpg" alt="pic" class="img9">
+        <img src="FB_IMG_1711581073783.jpg" alt="pic" class="img11">
+        <img src="FB_IMG_1711580713422.jpg" alt="pic" class="img10">
+        <img src="received_1405705396942633.jpeg" alt="pic" class="img12">
+        <img src="received_1429603100975846.jpeg" alt="pic" class="img13">
+        <img src="received_203744079476190.jpeg" alt="pic" class="img14">
+        <img src="received_387275090727610.jpeg" alt="pic" class="img15">
+    </div>
+
+    <p class="credits" id="about">
+        This website has been developed by students in ICT12 at PHINMA-Rizal College of Laguna. Its primary objective is to connect with young individuals who may be facing challenges and uncertainty, offering them guidance and motivation as they navigate through life's journey.<br><br><br>Developers<br><br>
+        <!-- Adding images for credits -->
+        <img src="Scantlin.jpg" title="Cayson, John Scantlin" alt="Cayson" class="developer-image">
+        <img src="Bea.jpg" title="Dones, Bea Faye" alt="Dones" class="developer-image">
+        <img src="Kiana.jpg" title="Francisco, Kiana" alt="Francisco" class="developer-image">
+        <img src="Hazel.jpg" title="Genove, Hazel Mae" alt="Genove" class="developer-image">
+        <img src="Ricson.jpg" title="Ojos, John Ricson" alt="Ojos" class="developer-image">
+        <img src="Marianne.jpg" title="Zamora, Marianne" alt="Zamora" class="developer-image">
+    </p>
+    
+</body>
+</html>

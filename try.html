@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Try</title>
+<style>
+    .box {
+        width: 200px;
+        height: 100px;
+        background-color: #f0f0f0;
+        border: 2px solid #333;
+        padding: 20px;
+        text-align: center;
+        line-height: 60px;
+        cursor: pointer; /* Add cursor pointer to indicate clickability */
+        transition: background-color 0.3s ease;
+    }
+    .box:hover {
+        background-color: #ccc; /* Change color on hover for visual feedback */
+    }
+
+    .box p {
+        transition: opacity 0.3s ease; /* Add transition to text opacity */
+        margin: 0; /* Remove default margin for better presentation */
+    }
+
+    .hide {
+        opacity: 0; /* Hide text by default */
+    }
+
+    .show {
+        opacity: 1; /* Show text */
+    }
+</style>
+</head>
+<body>
+
+<div class="box" onclick="toggleText()">
+    <p id="text">How are you?</p>
+</div>
+
+<script>
+    var textOptions = [
+        "How are you?",
+        "Have you ever asked yourself how you really are?",
+        "I love you",
+        "gusto naman kita kaso bawal e HUHU"
+    ];
+    var currentIndex = 0;
+
+    function toggleText() {
+        var textElement = document.getElementById('text');
+        currentIndex = (currentIndex + 1) % textOptions.length;
+        textElement.classList.remove('show'); // Remove the 'show' class
+        textElement.classList.add('hide'); // Add the 'hide' class
+        setTimeout(function() {
+            textElement.innerText = textOptions[currentIndex]; // Change the text after transition
+            textElement.classList.remove('hide'); // Remove the 'hide' class
+            textElement.classList.add('show'); // Add the 'show' class
+        }, 300); // Delay changing text after transition (0.3s)
+    }
+</script>
+
+</body>
+</html>
